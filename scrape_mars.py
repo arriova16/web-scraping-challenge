@@ -100,7 +100,7 @@ def mars_scrape():
                         "news_p": news_p,
                         "featured_image_url": featured_image_url,
                         "mars_table_html": mars_table_html,
-                        "hemispheres_img_urls": hemisphere_image_urls}
+                        "hemispheres_img_urls": hemisphere_img_urls}
    
    
     print(mars_dictionary)
