@@ -12,20 +12,14 @@
 <body>
   <div class="container-fluid">
     <div class="jumbotron text-center">
-      <h1>Interact with Aliens</h1>
-      <p>Mars aliens</p>
-      <p><a class="btn btn-primary btn-lg" href="/scrape_mars" role="button">Get Data!</a></p>
+      <h1>Visit the...</h1>
+      <p>Beach. Rainforest. Volcano. Tree House. Sloths.</p>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Data!</a></p>
     </div>
-    <img src="{{ mars_html.featured_image_url}}" alt="Sloth">
+    <img src="{{ mars_html.featured_image_url }}" alt="Sloth">
     <h2>The typical weather in Costa Rica is:</h2>
-    <h3>Max Temp: {{ mars_html.news_title}}</h3>
-    <h3>Min Temp: {{ mars_html.news_p}}</h3>
-    [{'title': Schiaparelli Hemisphere}]
-    {% hemisphere in mars_html.hemispheres %}
-    <p>
-      {{hemisphere.titl}}
-    </p>
-    {% endfor %}
+    <h3>Max Temp: {{ mars_html.news_title }}</h3>
+    <h3>Min Temp: {{ mars_html.news_p }}</h3>
   </div>
   </div>
 </body>
