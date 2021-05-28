@@ -15,19 +15,22 @@
       <h1>Mission to Mars</h1>
       <p><a class="btn btn-primary btn-lg" href="/scrape_mars" role="button">Scrape New Data</a></p>
     </div>
+  <div class="col-md-6">
     <h2>Latest Mars News</h2>
    
     <h4>{{ mars_html.news_title }}</h4>
     <h5>{{ mars_html.news_p }}</h5>
     <h2>Featured Mars Image</h2>
     <img src="{{ mars_html.featured_image_url }}" alt="Featured Image"> 
-
+</div>
     <div>
       {{ mars_html.mars_table_html | safe}}
     </div>
+  </div>
     <div class="container-fluid">
-      <div class="row">
+ 
         {% for hemisphere in mars_html.hemispheres_img_urls %}
+        <div class="col-md-5">
         <div>{{ hemisphere.title }}</div>
         <img src= "{{ hemisphere.img_url }}" width= "200px" height="200px"class="img-thumbnail" alt="{{ hemisphere.title }}">
       </div>
@@ -36,7 +39,7 @@
   </div>
   </div>
 </div>
-
+</div>
 </body>
 
 </html>
